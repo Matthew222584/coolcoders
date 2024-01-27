@@ -1,0 +1,15 @@
+#root {
+  margin: 0;
+  width: 100%;
+  height: 20vh;
+  padding: 0;
+  max-width: none;
+}
+
+.finalnav {
+  background-color: #212121;
+}
+
+.navtext {
+  color: white;
+}
