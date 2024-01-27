@@ -1,11 +1,25 @@
 import "./content.css";
 
 function Content({ pageIndex, setIndex }) {
-  return (
-    <div class="contentbody">
-      <p>test</p>
-    </div>
-  );
+  if (pageIndex === 0) {
+    return (
+      <div className="contentbody">
+        <p className="contenttext">test</p>
+      </div>
+    );
+  } else if (pageIndex === 1) {
+    return (
+      <div className="contentbody">
+        <p className="contenttext">test1</p>
+      </div>
+    );
+  } else if (pageIndex === 2) {
+    return (
+      <div className="contentbody">
+        <p className="contenttext">test2</p>
+      </div>
+    );
+  }
 }
 
 export default Content;
