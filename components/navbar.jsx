@@ -1,6 +1,6 @@
 import "./navbar.css";
 import logoImage from "../src/assets/spotify-2-logo-png-transparent.png";
-function Navbar({ loggedIn }) {
+function Navbar({ loggedIn, setLoggedIn }) {
   return (
     <div>
       <nav class="navbar navbar-expand-lg finalnav">
@@ -36,10 +36,15 @@ function Navbar({ loggedIn }) {
               </a>
             </li>
             {loggedIn && (
-              <li class="nav-item">
-                <a class="nav-link navtext" href="/login">
+              <li class="nav-item loginbutton">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setLoggedIn(!loggedIn);
+                  }}
+                >
                   Login
-                </a>
+                </button>
               </li>
             )}
           </ul>
@@ -48,5 +53,4 @@ function Navbar({ loggedIn }) {
     </div>
   );
 }
-
 export default Navbar;

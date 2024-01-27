@@ -1,6 +1,6 @@
 import "./content.css";
 
-function Content() {
+function Content({ pageIndex, setIndex }) {
   return (
     <div class="contentbody">
       <p>test</p>
