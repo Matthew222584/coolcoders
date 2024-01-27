@@ -1,11 +1,11 @@
 import "./navbar.css";
-
+import logoImage from "../src/assets/spotify-2-logo-png-transparent.png";
 function Navbar({ loggedIn }) {
   return (
     <div>
       <nav class="navbar navbar-expand-lg finalnav">
-        <a class="navbar-brand" href="#">
-          <image></image>
+        <a class="navbar-brand" href="/home">
+          <img class="navbarimg" src={logoImage}></img>
         </a>
         <button
           class="navbar-toggler"
