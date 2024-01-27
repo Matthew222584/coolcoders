@@ -5,11 +5,11 @@ import "./App.css";
 import Navbar from "../components/navbar";
 
 function App() {
-  // const [count, setCount] = useState(0) example state
+  const [loggedIn, setLoggedIn] = useState(true);
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar loggedIn={loggedIn}></Navbar>
     </>
   );
 }

@@ -1,11 +1,11 @@
 import "./navbar.css";
 
-function Navbar() {
+function Navbar({ loggedIn }) {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg finalnav">
         <a class="navbar-brand" href="#">
-          Navbar
+          <image></image>
         </a>
         <button
           class="navbar-toggler"
@@ -21,25 +21,27 @@ function Navbar() {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
+              <a class="nav-link  navtext" href="/home">
                 Home <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link navtext" href="/playlist">
                 Playlist
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link navtext" href="/stats">
                 Stats
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">
-                Disabled
-              </a>
-            </li>
+            {loggedIn && (
+              <li class="nav-item">
+                <a class="nav-link navtext" href="/login">
+                  Login
+                </a>
+              </li>
+            )}
           </ul>
         </div>
       </nav>
