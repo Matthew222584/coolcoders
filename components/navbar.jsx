@@ -1,11 +1,11 @@
 import "./navbar.css";
-
-function Navbar({ loggedIn }) {
+import logoImage from "../src/assets/spotify-2-logo-png-transparent.png";
+function Navbar({ loggedIn, setLoggedIn }) {
   return (
     <div>
       <nav class="navbar navbar-expand-lg finalnav">
-        <a class="navbar-brand" href="#">
-          <image></image>
+        <a class="navbar-brand" href="/home">
+          <img class="navbarimg" src={logoImage}></img>
         </a>
         <button
           class="navbar-toggler"
@@ -36,10 +36,15 @@ function Navbar({ loggedIn }) {
               </a>
             </li>
             {loggedIn && (
-              <li class="nav-item">
-                <a class="nav-link navtext" href="/login">
+              <li class="nav-item loginbutton">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setLoggedIn(!loggedIn);
+                  }}
+                >
                   Login
-                </a>
+                </button>
               </li>
             )}
           </ul>
@@ -48,5 +53,4 @@ function Navbar({ loggedIn }) {
     </div>
   );
 }
-
 export default Navbar;
