@@ -47,6 +47,10 @@ table {
   margin: auto;
 }
 
+table.devTable {
+  padding-bottom: 100px;
+}
+
 td > img {
   max-width: 88%; /* Make the image responsive within the cell */
   max-height: 88%;

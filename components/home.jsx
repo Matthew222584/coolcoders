@@ -59,7 +59,7 @@ function Home({ setIndex }) {
           <b>Developers</b>
         </p>
       </div>
-      <table>
+      <table class="devTable">
         <tr>
           <td className="devItems">
             <table className="table-modified">
