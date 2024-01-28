@@ -1,172 +1,98 @@
-.contentbody {
-    background-color: #121212;
-    /* width: 100vw;
-    height: 100vh; */
+/* Add this to your existing CSS */
+
+.selected-items {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    align-self: center; /* Center the selected items box */
   }
-  .contenttext {
+  
+  .suggestions-container {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding-right: 60px;
+    width: 80%; /* Set the width as needed */
+    align-self: center; /* Center the suggestions */
+  }
+  
+  .suggestion-item {
+    background-color: #4CAF50;
     color: white;
-  }
-  
-  * {box-sizing:border-box}
-  
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+    padding: 5px;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    border-radius: 5px;
   }
   
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px; /* Add padding to the bottom */
+    align-self: center; /* Center the search container */
+    width: 80%; /* Set the width as needed */
   }
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  /* Adjust the height of the search bar */
+  .search-container input {
+    width: 100%; /* Make the input full width */
+    padding: 10px; /* Add padding to the input */
+    margin-bottom: 10px; /* Add margin to the input */
   }
 
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  /* Adjust the width of the suggestions */
+  .suggestions-container {
+    width: 100%; /* Make the suggestions full width */
   }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+
+  .suggestion-item.selected {
+    background-color: darkgreen;
   }
-  
+
+  /* Adjust the size of the carousel slide images */
   .carousel-slide {
-    min-width: 100%;
-    display: none; /* Hide all slides by default */
-  }
-  
-  .carousel-slide.active {
-    display: block; /* Display only the active slide */
-  }
-  
-  /* content.css */
-  
-  .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .carousel-slide {
-    width: 400px; /* Set the width of the images */
-    
+    width: 600px; /* Set the width of the images */
     box-sizing: border-box;
     margin: 5px; /* Adjust margin as needed */
     background-color: transparent;
   }
 
-  img {
-    background-color: transparent !important;
+  .left-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Center the content vertically */
   }
-  
+
+  .carousel-container {
+    display: flex;
+    flex-direction: column; /* Stack the carousel on top of the buttons */
+
+  }
+
   .buttons-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%; /* Make the container full width */
-    margin-top: 10px; /* Adjust margin as needed */
-  }
-  
-  /* Previous button */
-.prev-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .prev-button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Next button */
-  .next-button, .select-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .next-button:hover, select-button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Use Unicode arrows as content */
-  .prev-button::before {
-    font-size: 18px;
-  }
-  
-  .next-button::before, .select-button::before {
-    font-size: 18px;
+    flex-direction: column; /* Stack the buttons below the carousel */
+    align-items: center; /* Center the buttons horizontally */
   }
 
+.right-column, .search-container, .suggestions-container {
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
 
-  
+.wide-image {
+    width: 300px;
+}
+
+.white {
+    color: white;
+}
+
+h1 {
+    padding-top: 10px;
+}
