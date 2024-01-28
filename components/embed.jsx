@@ -1,11 +1,12 @@
-import "./embed.css"
+import "./embed.css";
 
 function Embed() {
- <span>
-    <p>
-        test
-    </p>
- </span>
+  return (
+    <span>
+      <p className="spotify-text titleText">Your playlist has been generated</p>
+      <div className="embedBox"></div>
+    </span>
+  );
 }
 
 export default Embed;

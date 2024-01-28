@@ -1,0 +1,13 @@
+.titleText {
+  font-size: 3rem;
+  padding-top: 3rem;
+}
+
+.spotify-text {
+  font-family: "Proxima Nova", sans-serif;
+  color: white;
+  white-space: nowrap;
+}
+
+.embedBox {
+}
