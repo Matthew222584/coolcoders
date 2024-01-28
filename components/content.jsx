@@ -1,6 +1,8 @@
+import BackgroundSelect from "./backgroundcarosel";
 import "./content.css";
 import Home from "./home";
 import Home from "./home";
+import { useState } from "react";
 
 function Content({ pageIndex, setIndex }) {
   const handleButtonClick = () => {
@@ -15,8 +17,17 @@ function Content({ pageIndex, setIndex }) {
     );
   } else if (pageIndex === 1) {
     return (
-      <div className="contentbody">
-        <p className="contenttext">test1</p>
+      <div>
+        <div className="contentbody">
+          <h1>My List</h1>
+          <p className="contenttext">Create your most wanted playlists now!</p>
+          <button type="button">Create MyList</button>
+
+          <BackgroundSelect
+            pageIndex={pageIndex}
+            setIndex={setIndex}
+          ></BackgroundSelect>
+        </div>
       </div>
     );
   } else if (pageIndex === 2) {

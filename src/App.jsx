@@ -7,6 +7,7 @@ import Content from "../components/content";
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [pageIndex, setIndex] = useState(0);
+  
 
   const handleNavClick = (index) => {
     setIndex(index);

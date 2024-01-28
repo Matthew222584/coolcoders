@@ -40,6 +40,7 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
                 class="nav-link navtext"
                 onClick={() => {
                   setIndex(1);
+                  loginFunc();
                 }}
               >
                 Playlist
@@ -55,19 +56,6 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
                 Stats
               </a>
             </li>
-            {!loggedIn && (
-              <li class="nav-item loginbutton">
-                <button
-                  type="button"
-                  onClick={() => {
-                    loginFunc();
-                    setLoggedIn(true);
-                  }}
-                >
-                  Login
-                </button>
-              </li>
-            )}
           </ul>
         </div>
       </nav>
