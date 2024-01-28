@@ -1,10 +1,11 @@
 import "./content.css";
+import Home from "./home";
 
 function Content({ pageIndex, setIndex }) {
   if (pageIndex === 0) {
     return (
       <div className="contentbody">
-        <p className="contenttext">test</p>
+        <Home></Home>
       </div>
     );
   } else if (pageIndex === 1) {
