@@ -6,7 +6,6 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
       <nav class="navbar navbar-expand-lg finalnav">
         <a
           class="navbar-brand"
-          href="/home"
           onClick={() => {
             setIndex(0);
           }}
@@ -29,7 +28,6 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
             <li class="nav-item active">
               <a
                 class="nav-link  navtext"
-                href="/home"
                 onClick={() => {
                   setIndex(0);
                 }}
@@ -40,7 +38,6 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
             <li class="nav-item">
               <a
                 class="nav-link navtext"
-                href="/playlist"
                 onClick={() => {
                   setIndex(1);
                 }}
@@ -51,7 +48,6 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
             <li class="nav-item">
               <a
                 class="nav-link navtext"
-                href="/stats"
                 onClick={() => {
                   setIndex(2);
                 }}
@@ -59,7 +55,7 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
                 Stats
               </a>
             </li>
-            {loggedIn && (
+            {!loggedIn && (
               <li class="nav-item loginbutton">
                 <button
                   type="button"
