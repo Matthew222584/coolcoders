@@ -1,9 +1,64 @@
 .titleText {
-  font-size: 15vh;
-  color: white;
-  padding-top: 10vh;
+  font-size: 7rem;
+  padding-top: 4rem;
 }
 
 .spotify-text {
   font-family: "Proxima Nova", sans-serif;
+  color: white;
+}
+
+.descriptionText {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.stepItem {
+  background-color: #2a2a2a;
+  width: 20rem;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.devItems {
+  background-color: #3a3a3a;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding-top: 3rem;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+td > img {
+  max-width: 88%; /* Make the image responsive within the cell */
+  max-height: 88%;
+  margin-top: 0%;
+  margin-bottom: 2rem;
+  border-collapse: separate;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.stepText {
+  max-width: 90%; /* Make the image responsive within the cell */
+  max-height: 90%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-left: 10px;
+}
+
+.stepText-modified {
+  max-width: 90%; /* Make the image responsive within the cell */
+  max-height: 90%;
+  margin: auto;
+  text-align: left;
+  padding-left: 10px;
 }
