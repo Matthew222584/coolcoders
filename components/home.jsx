@@ -1,5 +1,5 @@
 import "./home.css";
-function Home() {
+function Home({ setIndex }) {
   return (
     <span>
       <p className="titleText spotify-text">
@@ -44,6 +44,91 @@ function Home() {
               {" "}
               Choose your playlist cover and title
             </p>
+          </td>
+        </tr>
+      </table>
+      <div className="devTitleBox">
+        <button className="playlistBtn" onClick={setIndex}>
+          <p className="spotify-text playlistBtnText">
+            <b>Create my playlist!</b>
+          </p>
+        </button>
+      </div>
+      <div>
+        <p className="spotify-text devs devsTitle">
+          <b>Developers</b>
+        </p>
+      </div>
+      <table>
+        <tr>
+          <td className="devItems">
+            <table className="table-modified">
+              <tr>
+                <td>
+                  <img className="bioImg" src="../src/assets/Bryan.jpg"></img>
+                </td>
+                <td>
+                  <p classname="spotify-text devText">
+                    <b>Bryan Tran</b>
+                  </p>
+                  <p classname="spotify-text bioText">
+                    Michigan State University
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td className="devItems">
+            <table className="table-modified">
+              <tr>
+                <td>
+                  <img className="bioImg" src="../src/assets/Ben.jpg"></img>
+                </td>
+                <td>
+                  <p classname="spotify-text devText">
+                    <b>Benjamin Crimmins</b>
+                  </p>
+                  <p classname="spotify-text bioText">
+                    Michigan State University
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td className="devItems">
+            <table className="table-modified">
+              <tr>
+                <td>
+                  {" "}
+                  <img className="bioImg" src="../src/assets/Mat.jpg"></img>
+                </td>
+                <td>
+                  <p classname="spotify-text devText">
+                    <b>Matthew Inda</b>
+                  </p>
+                  <p classname="spotify-text bioText">University of Michigan</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td className="devItems">
+            <table className="table-modified">
+              <tr>
+                <td>
+                  <img className="bioImg" src="../src/assets/Thu.jpg"></img>
+                </td>
+                <td>
+                  <p classname="spotify-text devText">
+                    <b>Thu Doan</b>
+                  </p>
+                  <p classname="spotify-text bioText">
+                    Michigan State University
+                  </p>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>

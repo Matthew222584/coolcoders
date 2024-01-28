@@ -15,7 +15,7 @@ function App() {
         setLoggedIn={setLoggedIn}
         setIndex={setIndex}
       ></Navbar>
-      <Content pageIndex={pageIndex}></Content>
+      <Content pageIndex={pageIndex} setIndex={setIndex}></Content>
     </>
   );
 }

@@ -1,16 +1,18 @@
 .titleText {
-  font-size: 7rem;
-  padding-top: 4rem;
+  font-size: 6rem;
+  padding-top: 1rem;
 }
 
 .spotify-text {
   font-family: "Proxima Nova", sans-serif;
   color: white;
+  white-space: nowrap;
 }
 
 .descriptionText {
   font-size: 2rem;
-  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-top: -1.5rem;
 }
 
 .stepItem {
@@ -25,15 +27,24 @@
 
 .devItems {
   background-color: #3a3a3a;
+  width: 35rem;
+  height: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+  align-items: left;
+  max-height: 5rem;
 }
 
 table {
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 10px;
-  padding-top: 3rem;
   border-collapse: separate;
-  border-spacing: 20px;
+  border-spacing: 1rem;
+  margin: auto;
 }
 
 td > img {
@@ -61,4 +72,61 @@ td > img {
   margin: auto;
   text-align: left;
   padding-left: 10px;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+
+.bioText {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.bioImg {
+  max-height: 10rem;
+  margin: 0%;
+}
+
+.table-modified {
+  margin-left: 0;
+}
+
+.devs {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.devsTitle {
+  font-size: 5rem;
+}
+
+.devTitleBox {
+  margin-top: -2rem;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-radius: 10px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  transition: background-color 0.3s;
+  border-radius: 6rem;
+  margin-bottom: 7rem;
+}
+
+.playlistBtn {
+  background-color: #1db954;
+  border-collapse: separate;
+  border-radius: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.playlistBtnText {
+  padding-top: 1rem;
+  font-size: 1.2rem;
 }
