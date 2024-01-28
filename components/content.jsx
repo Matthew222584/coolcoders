@@ -19,11 +19,12 @@ function Content({ pageIndex, setIndex }) {
 
         <div>
           <div className="contentbody">
-            <h1>My List</h1>
+            <h1 class="white">My List</h1>
             <p className="contenttext">Create your most wanted playlists now!</p>
-            <button type="button">Create MyList</button>
+            
 
             <BackgroundSelect pageIndex={pageIndex} setIndex={setIndex}></BackgroundSelect>
+            <button type="button">Create MyList</button>
           </div>
       
           
