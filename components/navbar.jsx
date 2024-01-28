@@ -40,7 +40,6 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
                 class="nav-link navtext"
                 onClick={() => {
                   setIndex(1);
-                  loginFunc();
                 }}
               >
                 Playlist

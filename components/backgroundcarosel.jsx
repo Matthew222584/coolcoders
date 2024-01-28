@@ -2,7 +2,7 @@
 import "./backgroundcarosel.css";
 import { useState } from "react";
 
-export default function BackgroundSelect({ pageIndex, setIndex }) {
+export default function BackgroundSelect({ pageIndex, setIndex, setItems, setImage, setDirection, setChange}) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [backgroundImg, setBackgroundImg] = useState("");
   const [selectedItems, setSelectedItems] = useState([]);
@@ -21,11 +21,13 @@ export default function BackgroundSelect({ pageIndex, setIndex }) {
   const handleSelect = (item) => {
     if (selectedItems.length < 5 && !selectedItems.includes(item)) {
       setSelectedItems((prevItems) => [...prevItems, item]);
+      setItems(selectedItems);
     }
   };
 
   const handleRemove = (item) => {
     setSelectedItems((prevItems) => prevItems.filter((prevItem) => prevItem !== item));
+    setItems(selectedItems);
   };
 
   const handleSearch = (query) => {
@@ -39,12 +41,16 @@ export default function BackgroundSelect({ pageIndex, setIndex }) {
   };
 
   const prevSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 0 ? imagePaths.length - 1 : prevIndex - 1));
+    setActiveIndex((activeIndex) => (activeIndex === 0 ? imagePaths.length - 1 : activeIndex - 1));
+    setImage(activeIndex);
+    console.log(activeIndex);
     declareBackgroundImage(imagePaths[activeIndex]);
   };
 
   const nextSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex === imagePaths.length - 1 ? 0 : prevIndex + 1));
+    setActiveIndex((activeIndex) => (activeIndex === imagePaths.length - 1 ? 0 : activeIndex + 1));
+    setImage(activeIndex);
+    console.log(activeIndex);
     declareBackgroundImage(imagePaths[activeIndex]);
   };
 
