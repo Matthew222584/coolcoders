@@ -1,7 +1,6 @@
 import BackgroundSelect from "./backgroundcarosel";
 import "./content.css";
 import Home from "./home";
-import Home from "./home";
 import { useState } from "react";
 
 function Content({ pageIndex, setIndex }) {
