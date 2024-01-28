@@ -31,13 +31,7 @@ function Content({ pageIndex, setIndex }) {
         </div>
 
     );
-  } else if (pageIndex === 2) {
-    return (
-      <div className="contentbody">
-        <p className="contenttext">test2</p>
-      </div>
-    );
-  }
+  } 
 }
 
 export default Content;

@@ -46,16 +46,6 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
                 Playlist
               </a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link navtext"
-                onClick={() => {
-                  setIndex(2);
-                }}
-              >
-                Stats
-              </a>
-            </li>
           </ul>
         </div>
       </nav>
@@ -64,13 +54,7 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
 }
 
 async function loginFunc() {
-  if (!code) {
     redirectToAuthCodeFlow(clientId);
-  } else {
-    const accessToken = await getAccessToken(clientId, code);
-    const profile = await fetchProfile(accessToken);
-    populateUI(profile);
-  }
 }
 
 const clientId = "0acc442e06354f569180db6ba97f888d"; // Replace with your client ID

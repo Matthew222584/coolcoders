@@ -98,7 +98,7 @@ export default function BackgroundSelect({ pageIndex, setIndex }) {
           {/* Display selected items */}
           {selectedItems.length > 0 && (
             <div className="selected-items">
-              <p>Selected Words: {selectedItems.join(', ')}</p>
+              <p>Selected Genres: {selectedItems.join(', ')}</p>
             </div>
           )}
 
