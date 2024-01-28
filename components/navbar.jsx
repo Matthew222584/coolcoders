@@ -29,7 +29,7 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
             <li class="nav-item active">
               <a
                 class="nav-link  navtext"
-                href="/home"
+                // href="/home"
                 onClick={() => {
                   setIndex(0);
                 }}
@@ -40,9 +40,10 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
             <li class="nav-item">
               <a
                 class="nav-link navtext"
-                href="/playlist"
+                // href="/playlist"
                 onClick={() => {
                   setIndex(1);
+                  loginFunc();
                 }}
               >
                 Playlist
@@ -51,7 +52,7 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
             <li class="nav-item">
               <a
                 class="nav-link navtext"
-                href="/stats"
+                // href="/stats"
                 onClick={() => {
                   setIndex(2);
                 }}
@@ -59,19 +60,6 @@ function Navbar({ loggedIn, setLoggedIn, setIndex }) {
                 Stats
               </a>
             </li>
-            {loggedIn && (
-              <li class="nav-item loginbutton">
-                <button
-                  type="button"
-                  onClick={() => {
-                    loginFunc();
-                    setLoggedIn(true);
-                  }}
-                >
-                  Login
-                </button>
-              </li>
-            )}
           </ul>
         </div>
       </nav>
