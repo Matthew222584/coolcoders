@@ -10,8 +10,12 @@ function App() {
 
   return (
     <>
-      <Navbar loggedIn={loggedIn} setLoggedIn={setLoggedIn}></Navbar>
-      <Content pageIndex={pageIndex} setIndex={setIndex}></Content>
+      <Navbar
+        loggedIn={loggedIn}
+        setLoggedIn={setLoggedIn}
+        setIndex={setIndex}
+      ></Navbar>
+      <Content pageIndex={pageIndex}></Content>
     </>
   );
 }
