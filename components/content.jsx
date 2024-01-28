@@ -1,11 +1,16 @@
 import "./content.css";
 import Home from "./home";
+import Home from "./home";
 
 function Content({ pageIndex, setIndex }) {
+  const handleButtonClick = () => {
+    // Example usage of setIndex
+    setIndex(1); // or any other value you want to set
+  };
   if (pageIndex === 0) {
     return (
       <div className="contentbody">
-        <Home></Home>
+        <Home setIndex={handleButtonClick}></Home>
       </div>
     );
   } else if (pageIndex === 1) {
