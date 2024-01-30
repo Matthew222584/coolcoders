@@ -1,0 +1,98 @@
+/* Add this to your existing CSS */
+
+.selected-items {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    align-self: center; /* Center the selected items box */
+  }
+  
+  .suggestions-container {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding-right: 60px;
+    width: 80%; /* Set the width as needed */
+    align-self: center; /* Center the suggestions */
+  }
+  
+  .suggestion-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px; /* Add padding to the bottom */
+    align-self: center; /* Center the search container */
+    width: 80%; /* Set the width as needed */
+  }
+  
+  /* Adjust the height of the search bar */
+  .search-container input {
+    width: 100%; /* Make the input full width */
+    padding: 10px; /* Add padding to the input */
+    margin-bottom: 10px; /* Add margin to the input */
+  }
+
+  /* Adjust the width of the suggestions */
+  .suggestions-container {
+    width: 100%; /* Make the suggestions full width */
+  }
+
+  .suggestion-item.selected {
+    background-color: darkgreen;
+  }
+
+  /* Adjust the size of the carousel slide images */
+  .carousel-slide {
+    width: 600px; /* Set the width of the images */
+    box-sizing: border-box;
+    margin: 5px; /* Adjust margin as needed */
+    background-color: transparent;
+  }
+
+  .left-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Center the content vertically */
+  }
+
+  .carousel-container {
+    display: flex;
+    flex-direction: column; /* Stack the carousel on top of the buttons */
+
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column; /* Stack the buttons below the carousel */
+    align-items: center; /* Center the buttons horizontally */
+  }
+
+.right-column, .search-container, .suggestions-container {
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.wide-image {
+    width: 300px;
+}
+
+.white {
+    color: white;
+}
+
+h1 {
+    padding-top: 10px;
+}
